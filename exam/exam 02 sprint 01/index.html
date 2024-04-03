@@ -34,9 +34,9 @@ let newPerson = {
     ...person,
     children: [
         {
-            XXX.YYY[0],
+            ...person.children[0],
             grandchildren: [
-                XXX.YYY[0].grandchildren,
+                person.children[0].grandchildren,
                 {
                     name: "Bob",
                     age: 15
