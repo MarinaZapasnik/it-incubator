@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exam_3</title>
+</head>
+
+<body>
+  <script>
+    const namesArray = [
+      ["John", "Mary", "David", "Sarah", "Michael"],
+      ["Emma", "Robert", "Sophia", "James", "Olivia"],
+      ["William", "Emily", "Joseph", "Isabella", "Daniel"],
+      ["Grace", "Benjamin", "Mia", "Henry", "Abigail"],
+      ["Alexander", "Ava", "Matthew", "Charlotte", "Ethan"],
+      ["Harper", "Jack", "Amelia", "Samuel", "Lily"],
+      ["Owen", "Ella", "David", "Victoria", "Leo"],
+      ["Chloe", "Andrew", "Nora", "Thomas", "Sofia"]
+    ];
+
+    const filteredNames = namesArray
+      .flatMap(names => names.XXX(name => name[0] === 'YYY')).ZZZ(",");
+
+    console.log(filteredNames);
+
+  </script>
+</body>
+
+</html>
+
+// ! ЧИТАЙ ВНИМАТЕЛЬНО, НЕ СПЕШИ:
+// Чтобы пройти тест, тебе необходимо вместо заглушек XXX, YYY , ZZZ 
+// написать методы и еще что-то, чтобы вывести все имена начинающиеся на букву "M"
+// Пример:  метод * метод (через пробелы, БЕЗ КАВЫЧЕК)
+// Заодно не поленись уточнить что делает метод flatMap
