@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exam_4</title>
+</head>
+
+<body>
+  <input type="text" id="myInput">
+  <button id="myButton">Перейти на сайт</button>
+  <p>ПОСЕЩЕННЫЕ САЙТЫ:</p>
+  <div id="list"></div>
+
+  <script>
+    const input = document.getElementById("myInput");
+    const button = document.getElementById("myButton");
+    const назовиМеняКакНазываетсяДивка= document.getElementById("list");
+
+    button.addEventListener("click", function () {
+      const text = input.value;
+      const newElement = document.createElement("p");
+      newElement.textContent = text;
+      XXX.YYY(newElement);
+      input.value = "";
+
+      // Переход в браузере по введенному адресу в новой вкладке
+      window.open(`https://${text}`, '_blank');
+    });
+
+  </script>
+</body>
+
+</html>
+
+
+// ! ЧИТАЙ ВНИМАТЕЛЬНО, НЕ СПЕШИ:
+// Нужно что-то поделать со строкой XXX.YYY(newElement)
+// Здесь должен добавляться напечатанный нами адрес в список дивки
+// Пример: див.добавь (через ТОЧКУ, то что в скобках писать не нужно)
+// Не забудь подправить и это чудо:
+// const назовиМеняКакНазываетсяДивка= document.getElementById("list");
