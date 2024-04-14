@@ -20,7 +20,7 @@
     ];
 
     const filteredNames = namesArray
-      .flatMap(names => names.XXX(name => name[0] === 'YYY')).ZZZ(",");
+      .flatMap(names => names.filter(name => name[0] === 'M')).join(",");
 
     console.log(filteredNames);
 

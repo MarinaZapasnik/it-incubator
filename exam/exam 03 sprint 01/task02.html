@@ -14,7 +14,7 @@
       { title: "ReactJS", isDone: false }
     ];
 
-    const tasksWithId = XXX.map((task, index) => ({ YYY, id: ZZZ+ 1 }));
+    const tasksWithId = todos.map((task, index) => ({ ...task, id: index+ 1 }));
 
     console.log(tasksWithId);
 
