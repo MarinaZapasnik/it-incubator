@@ -1,20 +1,18 @@
-'use strict'
+function main() {
+  var year = 1986;
+  var month = 10;
+  var day = 28;
+   
+  console.log(getWeekDay(year, month, day)); 
+}
 
-const inputArea = document.createElement('input');
-inputArea.type = 'text';
-const inputText = 'Введите ваше имя';
-inputArea.value = inputText;
-document.body.append(inputArea);
+function getWeekDay(year, month, day) {
+  var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var d = new Date(year, month, day);
+  let weekDayIndex = d.getDay();
+  return (names[weekDayIndex]);
 
-const okButton = document.createElement('button');
-okButton.type = 'button';
-okButton.innerText = 'OK';
-document.body.append(okButton);
+   
+}
 
- okButton.addEventListener('click', function() {
-      if (inputArea.value != inputText){
-        alert(inputArea.value)
-      }
-  })
-
-
+main()
