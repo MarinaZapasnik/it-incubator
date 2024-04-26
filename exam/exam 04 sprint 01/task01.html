@@ -15,13 +15,13 @@
   <script>
     const input = document.getElementById("myInput");
     const button = document.getElementById("myButton");
-    const div = document.getElementById("list");
+    const list = document.getElementById("list");
 
     button.addEventListener("click", function () {
       const text = input.value;
       const newElement = document.createElement("p");
       newElement.textContent = text;
-      div.append(newElement);
+      list.append(newElement);
       input.value = "";
 
       // Переход в браузере по введенному адресу в новой вкладке
