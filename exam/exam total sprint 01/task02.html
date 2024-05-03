@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exam_4</title>
+</head>
+
+<body>
+  <script>
+    const users = [
+      {
+        id: 1,
+        name: 'John',
+        surName: 'Doe',
+        address: '123 Main St'
+      },
+      {
+        id: 2,
+        name: 'Jane',
+        surName: 'Smith',
+        address: '456 Elm St'
+      },
+      {
+        id: 3,
+        name: 'Tom',
+        surName: 'Johnson',
+        address: '789 Oak St'
+      },
+      {
+        id: 4,
+        name: 'Emily',
+        surName: 'Brown',
+        address: '567 Pine St'
+      },
+      {
+        id: 5,
+        name: 'Michael',
+        surName: 'Williams',
+        address: '890 Cedar St'
+      }
+    ];
+
+    const updatedUsers = users.map(({ surName, ...el}) => ({ ...XXX, YYY: '***' }));
+    console.log(updatedUsers);
+  </script>
+</body>
+</html>
+
+
+// ! ЧИТАЙ ВНИМАТЕЛЬНО, НЕ СПЕШИ:
+// В нашей компании решили обновить политику конфеденциальности-хотят удалить поле surName
+// и зашифровать звездочками адрес. Ну вот, они придумали-а нам делать...
+// необходимо убрать заглушки XXX YYY
+// пример: ,,,всеКромеФамилии ключ (ЧЕРЕЗ ПРОБЕЛ)
