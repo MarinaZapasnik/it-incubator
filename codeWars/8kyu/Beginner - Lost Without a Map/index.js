@@ -6,10 +6,14 @@
 
 //SOLUTION
 
+// function maps(x) {
+//     let doubleX = [];
+//     for (let i = 0; i < x.length; i++) {
+//         doubleX.push(x[i] * 2);
+//     }
+//     return doubleX
+// }
+
 function maps(x) {
-    let doubleX = [];
-    for (let i = 0; i < x.length; i++) {
-        doubleX.push(x[i] * 2);
-    }
-    return doubleX
+    return x.map(item => item * 2);
 }
